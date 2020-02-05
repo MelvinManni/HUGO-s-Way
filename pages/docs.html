@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <div class="flex">
+        <div class="bg-black">
+            <div class="black-fixed">
+                <div class="logo-img">
+                    <img class="nav-img" src="https://app.hugosway.com/static/media/logo-primary-white.7b007d24.svg" alt="">
+                </div>
+                
+                <div class="nav-items-list">
+                    <ul class="nav-items">
+                        <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fas fa-th-large"></i>
+                                Dashboard</a>
+                        </li>
+                        <li class="nav-item"><a href="accounts.html" class="nav-link"><i class="fas fa-briefcase"></i> My
+                                Accounts</a>
+                        </li>
+                        <li class="nav-item"><a href="deposit-funds.html" class="nav-link"> <i class="far fa-arrow-alt-circle-up"></i>
+                                Deposit Funds</a></li>
+                        <li class="nav-item"><a href="internal-transfer.html" class="nav-link"><i class="fas fa-retweet"></i> Internal
+                                Transfer</a></li>
+                        <li class="nav-item"><a href="withdraw.html" class="nav-link"><i class="far fa-arrow-alt-circle-down"></i>
+                                Withdraw</a></li>
+                        <li class="nav-item"><a href="kyc.html" class="nav-link"> <i class="far fa-file-alt"></i> KYC
+                                Verification</a>
+                        </li>
+                        <li class="nav-item"><a href="docs.html" class="nav-link"> <i class="far fa-file-alt"></i>
+                                Documents</a>
+                        </li>
+                        <li class="nav-item"><a href="notification.html" class="nav-link"><i class="far fa-comment-alt"></i>
+                                Notification</a></li>
+                        <li class="nav-item"><a href="setting.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a>
+                        </li>
+                        <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-sign-out-alt"></i>
+                                Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col w-100 p-0">
+            <div class="relative w-100">
+                <div class="fixed-top w-100">
+                    <div class="top-menu w-100">
+                        <div class="col wallet-sect">
+                            <h1><i class="far fa-wallet"></i>
+                                <p id="balance">0.00</p>
+                            </h1>
+                        </div>
+                    
+                        <div class="welcome-greet">
+                            <div class="flex">
+                                <a href="https://download.mql5.com/cdn/web/11584/mt4/hugosway4setup.exe"><button
+                                        class="def-btn btn">Download
+                                        MT4</button></a>
+                                <a href="deposit-funds.html"><button class="def-btn btn">Deposit Funds</button></a>
+                    
+                                <div class="notification">
+                                    <i class="far fa-comment-alt"></i>
+                                    <p class="notification-count">3</p>
+                                </div>
+                    
+                                <div class="exit-message">
+                                    <p class="exit-m">
+                                        Hey, Melvin
+                                    </p>
+                                    <a href="../index.html" class="exit"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" body">
+                <div class="two-factor alert">
+                    <p class="alert-m">
+                        Enable two-factor authentication now to secure your account. <a href="setting.html"><button
+                                class="btn def-btn dash-btn">Get Started</button></a>
+                    </p>
+                </div>
+
+                <p class="dash-big-title">
+                    Additional Docs
+                </p>
+
+                <p>
+                    If you need to upload any additional documents you can upload them here.
+                </p>
+                <form action="">
+
+                    <div class="docs-select col-xlg-3 col-lg-4 col-md-12 ml-0 pl-0">
+                        <select name="" id="" class="type ml-0 pl-0">
+                            <option value="">Select a type</option>
+                            <option value="">Proof of ID</option>
+                            <option value="">Proof of Address</option>
+                            <option value="">Other</option>
+                        </select>
+
+                        <select name="" id="" class="ID ml-0 pl-0">
+                            <option value="">Select a Category</option>
+                            <option value="">Driving Licensce</option>
+                            <option value="">Government Issued ID</option>
+                            <option value="">Passport</option>
+                        </select>
+
+                        <select name="" id="" class="address ml-0 pl-0">
+                            <option value="">Select a Category</option>
+                            <option value="">Bank Statement</option>
+                            <option value="">Credit Card Statement</option>
+                            <option value="">Utility Bill</option>
+                        </select>
+
+                        <select name="" id="" class="other ml-0 pl-0">
+                            <option value="">Select a Category</option>
+                            <option value="">Selfie</option>
+                            <option value="">Proof of Payment</option>
+                            <option value="">Bank Statement</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="doc-upload">
+                        <label for="docs">
+                            <div class="docs-img w-100 col-xl-6 col-lg-6 col-md-10 col-sm-10">
+                                <img src="" alt="" id="doc-img">
+                                <p>Click or drag & drop your document here</p>
+                            </div>
+                        </label>
+                        <input type="file" name="" id="docs">
+                    </div>
+
+                    <button type="submit" id="kyc-btn" class=" ml-0 btn def-btn dash-btn">Upload KYC Doc</button>
+
+                </form>
+
+                <div class="footer">
+                    <p class="first">
+                        *This website is not directed at any jurisdiction and is not intended for any use that would
+                        be contrary to local law or
+                        regulation.
+                    </p>
+
+                    <p class="second">
+                        **Risk Warning: Trading leveraged products such as Forex and CFDs may not be suitable for
+                        all investors as they carry a
+                        degree of risk to your capital. Please ensure that you fully understand the risks involved,
+                        taking into account your
+                        investments objectives and level of experience, before trading, and if necessary seek
+                        independent advice.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+
+</html>
