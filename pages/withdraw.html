@@ -104,13 +104,9 @@
 
                 <div class="make-deposit-sect">
                     <p class="dash-big-title">
-                        Make a deposit
+                        Withdraw
                     </p>
 
-                    <p class="sub-dash-text">
-                        Looking to buy Bitcoin using your Credit/Debit Card? User our Step-by-Step Guide - <button
-                            class="btn dash-btn def-btn">Read More</button>
-                    </p>
 
                     <div class="deposit-select">
                         <select name="" id="" class="currency">
@@ -124,7 +120,7 @@
                         </select>
 
                         <select name="" id="" class="type">
-                            <option value="">Select a type</option>
+                            <option value="">Select a withdrawal type</option>
                             <option value="">Bitcoin</option>
                         </select>
 
@@ -136,24 +132,50 @@
                                 aria-label="number" aria-describedby="amount-sign">
                         </div>
 
-                        <button class="btn dash-btn def-btn ml-0">Deposit</button>
+                        <button class="btn dash-btn def-btn ml-0">Request Withdrawal</button>
+                    </div>
+
+                    <div class="withdrawal-message col-lg-4 col-12 ml-0 pl-0">
+                        <p>
+                            Note: All withdrawals can take several hours to complete. You will be emailed about the progress of your
+                            request.
+                        </p>
+                    
+                        <p>
+                            Note: If you have any negative MT4 account balance/equity, you will not be able to withdraw funds until the
+                            account is
+                            balanced.
+                        </p>
                     </div>
 
                     <div class="deposit-history">
-                        <p class="dash-big-title">Deposit History</p>
+                        <p class="dash-big-title">Withdrawal History</p>
 
                         <div class="depo-table">
                             <table class=" table-deposit table-hover">
-                                <tr>
+                                <tr class="withdraw-table">
                                     <th>Date</th>
                                     <th>Transaction ID</th>
-                                    <th>Payments</th>
+                                    <th>BTC Address</th>
+                                    <th>Paymennt Method</th>
                                     <th>Amount</th>
-                                    <th>Approved Amount</th>
                                     <th>Status</th>
                                     <th>Comment</th>
                                     <th>Actions</th>
                                 </tr>
+
+                                <tr class="withdraw-table">
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th><input type="text" name="" id="" class="form-control"></th>
+                                    <th></th>
+                                    <th><input type="text" name="" id="" class="form-control"></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+
+
                                 <tr>
                                     <td></td>
                                     <td></td>
