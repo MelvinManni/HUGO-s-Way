@@ -22,9 +22,9 @@
 
             <div class="nav-items-list">
                 <ul class="nav-items">
-                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fas fa-th-large"></i>
+                    <p class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fas fa-th-large"></i>
                             Dashboard</a>
-                    </li>
+                    </p>
                     <li class="nav-item"><a href="accounts.html" class="nav-link"><i class="fas fa-briefcase"></i> My
                             Accounts</a>
                     </li>
@@ -55,7 +55,7 @@
         </div>
 
         <div class="col w-100 p-0">
-            <div class="relative">
+           <div class="relative">
                 <div class=" top-menu fixed-top">
                     <div class="col wallet-sect">
                         <h1><i class="far fa-wallet"></i>
@@ -84,117 +84,137 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="body">
-
+           </div>
+           
+           <div class="body">
                 <div class="two-factor alert">
                     <p class="alert-m">
                         Enable two-factor authentication now to secure your account. <a href="setting.html"><button
                                 class="btn def-btn dash-btn">Get Started</button></a>
                     </p>
                 </div>
-
-                <div class="dash-big-title mb-5">
-                    <h1>
-                        Notifications
+                <div class="setting-card p-5">
+                    <h1 class="dash-big-title">
+                        Support Pin Code
                     </h1>
+
+                    <h1 class="dash-big-title font-weight-bold">
+                        PIN: 495640
+                    </h1>
+
+                    <p>
+                        To regenerate your pin, click here - <button class="btn dash-btn def-btn">Reset</button>
+                    </p>
+
+                    <p>
+                        Note: A support agent may ask you for your 6 digit support pin to <br> help assist with your request.
+                    </p>
                 </div>
 
-                <div class="notification-bars">
-                    <div class="w-75">
-                        <p class="date" id="notif-date">
-                            30-Oct-2019 14:36
-                        </p>
-                        
-                        <h1 class="dash-big-title" id="notification-title"> Mandatory 2FA</h1>
-                        <p class="sub-message">
-                            In order to increase the security of your account,...
-                        </p>
-                    </div>
-                    <div class="w-25 row justify-content-between">
-                        <div class="w-25">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="w-25">
-                            <i class="far fa-eye"></i>
-                        </div>
-                    </div>
+                <div class="two-factor-main w-50 mt-5">
+                    <h1 class="dash-big-title">
+                        Two factor authentication
+                    </h1>
 
+                    <p>
+                        Two factor authentication with an authenticator app
+                        (like Google Authenticator, Authy, or Microsoft Authenticator)
+                        or via SMS provides an extra layer of security for your account.
+                    </p>
+
+                    <p>
+                        To add 2FA with an authenticator, you will need to scan a QR code with
+                        authenticator app on your phone, and enter the time based token displayed.
+                    </p>
+
+                    <p>
+                        To add 2FA via SMS, we will send you an one time password you can enter here.
+                    </p>
+                    <div class="col m-0 p-0">
+                        <button class="btn m-0 dash-btn def-btn">Enable 2FA with authenticator app</button>
+                        <button class="btn m-0 mt-3 dash-btn def-btn">Enable 2FA via SMS</button>
+                    </div>
                     <hr>
                 </div>
 
-                <div class="notification-bars">
-                    <div class="w-75">
-                        <p class="date" id="notif-date">
-                            30-Oct-2019 14:36
-                        </p>
-                
-                        <h1 class="dash-big-title" id="notification-title"> Mandatory 2FA</h1>
-                        <p class="sub-message">
-                            In order to increase the security of your account,...
-                        </p>
-                    </div>
-                    <div class="w-25 row justify-content-between">
-                        <div class="w-25">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="w-25">
-                            <i class="far fa-eye"></i>
-                        </div>
-                    </div>
-                
-                    <hr>
-                </div>
+                <div class="verify-num mt-5">
+                    <h1 class="dash-big-title">
+                        Verify or change phone
+                    </h1>
 
-                <div class="notification-bars">
-                    <div class="w-75">
-                        <p class="date" id="notif-date">
-                            30-Oct-2019 14:36
-                        </p>
-                
-                        <h1 class="dash-big-title" id="notification-title"> Mandatory 2FA</h1>
-                        <p class="sub-message">
-                            In order to increase the security of your account,...
-                        </p>
-                    </div>
-                    <div class="w-25 row justify-content-between">
-                        <div class="w-25">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="w-25">
-                            <i class="far fa-eye"></i>
-                        </div>
-                    </div>
-                
-                    <hr>
-                </div>
+                    <p>
+                        Your phone number is not verified.
+                    </p>
 
-                <div class="notif-btn-group row m-0 p-0 mt-5">
-                    <button class="notif-btn mr-auto">Previous</button>
-                    <button class="notif-btn ml-auto">Next</button>
+                    <p>
+                        Enter your phone number with country code number. An one time password will be sent to verify your phone
+                    </p>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="append"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <input type="tel" class="form-control p-5" placeholder="Label" aria-label="tel"
+                            aria-describedby="append">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="append"><i class="fas fa-phone"></i></span>
+                        </div>
+                    </div>
+
+                    <button  class="btn m-0 mt-3 dash-btn def-btn">Update or Verify</button>
+                </div>
+                <hr>
+
+                <div class="contact-prefs mt-5">
+                    <h1 class="dash-big-title">
+                        Contact Preferences
+                    </h1>
+
+                    <p>
+                        Here, you can edit your contact preferences. We strongly recommend keeping your system updates notifications enabled.
+                    </p>
+
+                    <div class="form-check ">
+                        <input type="checkbox" checked class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">Latest News & Marketing Offers</label>
+                    </div>
+
+                    <div class="form-check ">
+                        <input type="checkbox" checked class="form-check-input" id="Check1">
+                        <label class="form-check-label" for="Check1">System Related News & Updates</label>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="known-logins">
+                    <h1 class="dash-big-title">
+                        Known logins
+                    </h1>
+
+                    <p>
+                        Review and remove any logins that you do not recognize.
+                    </p>
+
+                    <button class="btn m-0 mt-3 dash-btn def-btn">Known Logins</button>
                 </div>
 
                 <div class="footer">
                     <p class="first">
-                        *This website is not directed at any jurisdiction and is not intended for any use that
-                        would
+                        *This website is not directed at any jurisdiction and is not intended for any use that would
                         be contrary to local law or
                         regulation.
                     </p>
                 
                     <p class="second">
-                        **Risk Warning: Trading leveraged products such as Forex and CFDs may not be suitable
-                        for
+                        **Risk Warning: Trading leveraged products such as Forex and CFDs may not be suitable for
                         all investors as they carry a
-                        degree of risk to your capital. Please ensure that you fully understand the risks
-                        involved,
+                        degree of risk to your capital. Please ensure that you fully understand the risks involved,
                         taking into account your
                         investments objectives and level of experience, before trading, and if necessary seek
                         independent advice.
                     </p>
                 </div>
-            </div>
+           </div>
         </div>
 
     </div>

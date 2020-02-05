@@ -219,10 +219,17 @@ button[type=submit]{
     text-decoration: none;
     color: #fff;
 }
-.nav-link:hover{
+.nav-link:hover, .nav-item i:hover{
     color: rgb(253, 133, 76);
 }
 .nav-link:active{
+    color: rgb(253, 133, 76);
+}
+
+.nav-item i:hover{
+    color: rgb(253, 133, 76);
+}
+.nav-item i:active{
     color: rgb(253, 133, 76);
 }
 
@@ -332,7 +339,7 @@ button[type=submit]{
     flex-direction: row;
     justify-content: space-between;
     min-width: 100%;
-    padding: 15px 0px;
+    padding: 15px 10px;
     margin-right: 20px;
     background-color: #fff;
     height: max-content;
@@ -442,6 +449,12 @@ select{
     border: 1px solid #ced4da;
     border-radius: .25rem;
     margin-bottom: 10px;
+}
+
+option{
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px 0;
 }
 
 .depo-table{
@@ -628,9 +641,89 @@ tr td{
     border: 2px solid black;
 }
 
+/* notification */
+
+.notification-bars{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    background-color: rgba(253, 133, 76, 0.1);
+    padding: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.w-25 i{
+    margin-left: auto;
+    color: rgb(253, 133, 76);
+    font-size: 16px;
+}
+
+.notif-btn-group{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 3px solid white;
+
+}
+
+.notif-btn{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 50%;
+    min-height: 46px;
+    height: 100%;
+    border: 0;
+    border-radius: 3px;
+    color: rgba(61, 59, 59, 0.6);
+    background: rgba(0,0,0,.1);
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+/* seeting */
+
+.setting-card{
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: max-content;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.two-factor-main .btn{
+    width: max-content;
+}
+
 .footer{
     margin-top: 20px;
     margin-left: 10px;
+}
+
+.close i {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px                                                                                                                                          ;
+    margin-left: auto;
+}
+
+@media all and (max-width: 760px){
+    .welcome-greet{
+        display: none;
+    }
+
+    .close-menu{
+        margin: 10px;
+    }
+
 }
 
 @media all and (max-width: 733px){
@@ -642,3 +735,4 @@ tr td{
         width:100% ;
     }
 }
+
