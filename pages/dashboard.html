@@ -13,50 +13,135 @@
 </head>
 
 <body>
-<div class="container w-100">
-    <div class="row">
-        <div class="col bg-black col-1">
+
+    <div class="flex">
+        <div class="bg-black">
             <div class="logo-img">
                 <img class="nav-img" src="https://app.hugosway.com/static/media/logo-primary-white.7b007d24.svg" alt="">
             </div>
-
+            
             <div class="nav-items-list">
                 <ul class="nav-items">
-                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fas fa-th-large"></i> Dashboard</a></li>
-                    <li class="nav-item"><a href="accounts.html" class="nav-link"><i class="fas fa-briefcase"></i> My Accounts</a></li>
-                    <li class="nav-item"><a href="deposit-funds.html" class="nav-link"> <i class="far fa-arrow-alt-circle-up"></i> Deposit Funds</a></li>
-                    <li class="nav-item"><a href="internal-transfer.html" class="nav-link"><i class="fas fa-retweet"></i> Internal Transfer</a></li>
-                    <li class="nav-item"><a href="withdraw.html" class="nav-link"><i class="far fa-arrow-alt-circle-down"></i> Withdraw</a></li>
-                    <li class="nav-item"><a href="kyc.html" class="nav-link"> <i class="far fa-file-alt"></i> KYC Verification</a></li>
-                    <li class="nav-item"><a href="docs.html" class="nav-link"> <i class="far fa-file-alt"></i> Documentation</a></li>
-                    <li class="nav-item"><a href="notification.html" class="nav-link"><i class="far fa-comment-alt"></i> Notification</a></li>
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fas fa-th-large"></i> Dashboard</a>
+                    </li>
+                    <li class="nav-item"><a href="accounts.html" class="nav-link"><i class="fas fa-briefcase"></i> My Accounts</a>
+                    </li>
+                    <li class="nav-item"><a href="deposit-funds.html" class="nav-link"> <i class="far fa-arrow-alt-circle-up"></i>
+                            Deposit Funds</a></li>
+                    <li class="nav-item"><a href="internal-transfer.html" class="nav-link"><i class="fas fa-retweet"></i> Internal
+                            Transfer</a></li>
+                    <li class="nav-item"><a href="withdraw.html" class="nav-link"><i class="far fa-arrow-alt-circle-down"></i>
+                            Withdraw</a></li>
+                    <li class="nav-item"><a href="kyc.html" class="nav-link"> <i class="far fa-file-alt"></i> KYC Verification</a>
+                    </li>
+                     <li class="nav-item"><a href="docs.html" class="nav-link"> <i class="far fa-file-alt"></i> Documentation</a>
+                    </li>
+                    <li class="nav-item"><a href="notification.html" class="nav-link"><i class="far fa-comment-alt"></i>
+                            Notification</a></li>
                     <li class="nav-item"><a href="setting.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a></li>
-                    <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
 
-        <div class="col col-11 top-dash">
-            <div class=""top-dash-flex>
+       <div class="col w-100 p-0">
+            <div class="top-menu">
                 <div class="col wallet-sect">
                     <h1><i class="far fa-wallet"></i>
-                    <p id="balance">0.00</p></h1>
+                        <p id="balance">0.00</p>
+                    </h1>
                 </div>
-                
+            
                 <div class="welcome-greet">
-                    <a href="https://download.mql5.com/cdn/web/11584/mt4/hugosway4setup.exe"><button class="btn">Download MT4</button></a>
-                    <a href="deposit-funds.html"><button class="btn">Deposit Funds</button></a>
-                    
-                    <div class="notification">
-                        <i class="far fa-comment-alt">
-                        <p class="notification-count">3</p>
+                    <div class="flex">
+                        <a href="https://download.mql5.com/cdn/web/11584/mt4/hugosway4setup.exe"><button
+                                class="def-btn btn">Download
+                                MT4</button></a>
+                        <a href="deposit-funds.html"><button class="def-btn btn">Deposit Funds</button></a>
+            
+                        <div class="notification">
+                            <i class="far fa-comment-alt"></i>
+                            <p class="notification-count">3</p>
+                        </div>
+            
+                        <div class="exit-message">
+                            <p class="exit-m">
+                                Hey, Melvin
+                            </p>
+                                <a href="../index.html" class="exit"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+
+            <div class="body">
+                <div class="alert-sect">
+                    <div class="two-factor alert">
+                        <p class="alert-m">
+                            Enable two-factor authentication now to secure your account. <a href="setting.html"><button
+                                    class="btn def-btn dash-btn">Get Started</button></a>
+                        </p>
+                    </div>
+                
+                    <div class="two-factor alert mb-0">
+                        <p class="alert-m">
+                            To activate Credit Card, Bank/Wire Transfer and Voucher deposit methods, please complete KYC
+                            verification <a href="kyc.html" class="alert-link">Click here</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="block-links">
+                    <a href="" class="block-link"><i class="far fa-arrow-alt-circle-up"></i>
+                    Deposit</a>
+                    <a href="" class="block-link"><i class="far fa-arrow-alt-circle-down"></i>
+                    Withdraw</a>
+                    <a href="" class="block-link"><i class="fas fa-briefcase"></i> My Accounts</a>
+                    <a href="" class="block-link"><i class="fas fa-retweet"></i> Internal
+                    Transfer</a>
+                </div>
+
+
+                <div class="dash-table"> 
+
+                    <p class="dash-big-title">Wallet</p>
+                    
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Wallet</th>
+                                <th scope="col">Fund</th>
+                                <th scope="col">Pending Withdrawal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+       </div>
+
     </div>
-</div>    
 
 </body>
+
 
 </html>
