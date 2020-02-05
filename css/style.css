@@ -547,6 +547,16 @@ tr td{
 }
 
 
+.dash-table table th{
+    text-align: left;
+}
+
+
+.dash-table table td{
+    text-align: left;
+}
+
+
 .footer{
     margin-top: 20px;
 }
