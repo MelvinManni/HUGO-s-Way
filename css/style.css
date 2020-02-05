@@ -29,7 +29,7 @@ body{
     font-family: 'poppins', sans-serif;
     color: #212529;
     font-weight: 300;
-    width: 100vw;
+    width: 100%;
 }
 
 body, html{
@@ -128,9 +128,9 @@ button[type=submit]{
 }
 
 .card{
-    min-height: max-content;
-    min-width: 420px;
-    width: 100%;
+    min-height: 200px;
+    min-width: 320px;
+    max-width: 420px;
     margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px, rgba(0, 0, 0, 0.01) 0px 10px 20px;
     padding: 30px 50px;
