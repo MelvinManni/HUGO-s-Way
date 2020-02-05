@@ -29,6 +29,7 @@ body{
     font-family: 'poppins', sans-serif;
     color: #212529;
     font-weight: 300;
+    width: 100vw;
 }
 
 body, html{
@@ -97,7 +98,7 @@ a:hover{
 }
 
 .fullView-flex{
-    background-image: url("/assets/images/new-bg.jpeg");
+    background-image: url("../assets/images/new-bg.jpeg");
     background-repeat: repeat-x;
     background-size: contain;
     display: flex;
@@ -542,18 +543,20 @@ tr td{
 }
 
 .dash-table{
-    width: 40%;
+    width: max-content;
     margin-top: 30px;
 }
 
 
 .dash-table table th{
     text-align: left;
+    white-space: nowrap;
 }
 
 
 .dash-table table td{
     text-align: left;
+    white-space: nowrap;
 }
 
 
