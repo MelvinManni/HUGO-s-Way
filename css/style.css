@@ -154,7 +154,8 @@ button[type=submit]{
 
 
 .second-sect-text{
-    width: 379px;
+    min-width: 320px;
+    max-width: 379px;
     max-width: max-content;
     max-height: max-content;
     word-wrap: break-word;
