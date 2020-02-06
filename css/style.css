@@ -25,6 +25,10 @@
     box-sizing: border-box;
 }
 
+.depo-table{
+    margin-top: 20px;
+}
+
 body{
     font-family: 'poppins', sans-serif;
     color: #212529;
@@ -854,6 +858,12 @@ tr td{
 
     .int-trans-select{
         min-width: 100%;
+    }
+
+    .open{
+        padding-right: 0px;
+        position: relative;
+        top: 4px;
     }
 
 }

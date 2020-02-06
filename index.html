@@ -32,7 +32,7 @@
                         <h5 class="title-login">Login to your account</h5>
                         <form action="pages/dashboard.html">
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control p-5" placeholder="Email" aria-label="Email"
+                                <input type="email" class="form-control p-5" placeholder="Email" aria-label="Email" required
                                     aria-describedby="append">
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="append"><i class="far fa-envelope"></i></span>
@@ -40,14 +40,14 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <input type="password" class="form-control p-5" placeholder="Password"
+                                <input type="password" class="form-control p-5" required placeholder="Password"
                                     aria-label="password" aria-describedby="append">
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="append"><i class="fas fa-lock"></i></span>
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn">Login</button>
+                            <button onsubmit="onclickLoad()" type="submit" class="btn " id="homeL">Login</button>
                         </form>
                         <hr>
                         <div class="sign-up">
