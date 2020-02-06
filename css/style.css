@@ -735,6 +735,16 @@ tr td{
     max-width: 30%;
 }
 
+.kyc-flex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.kyc-flex .card{
+    min-width: 100%;
+}
+
 
 
 @media all and (max-width: 760px){

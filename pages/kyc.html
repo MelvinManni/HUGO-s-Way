@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/readable/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <title>KYC Verification</title>
+</head>
+
+<body>
+
+    <div class="flex">
+        <div class="bg-black" id="bg-black">
+            <div class="logo-img">
+                <button class="close " id="closeBtn">
+                    <i class="fas fa-times" id="close-menu menu"></i>
+                </button>
+                <img class="nav-img" src="https://app.hugosway.com/static/media/logo-primary-white.7b007d24.svg" alt="">
+            </div>
+        
+            <div class="nav-items-list">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fas fa-th-large"></i>
+                            Dashboard</a>
+                    </li>
+                    <li class="nav-item"><a href="accounts.html" class="nav-link"><i class="fas fa-briefcase"></i> My
+                            Accounts</a>
+                    </li>
+                    <li class="nav-item"><a href="deposit-funds.html" class="nav-link"> <i
+                                class="far fa-arrow-alt-circle-up"></i>
+                            Deposit Funds</a></li>
+                    <li class="nav-item"><a href="internal-transfer.html" class="nav-link"><i class="fas fa-retweet"></i>
+                            Internal
+                            Transfer</a></li>
+                    <li class="nav-item"><a href="withdraw.html" class="nav-link"><i class="far fa-arrow-alt-circle-down"></i>
+                            Withdraw</a></li>
+                    <li class="nav-item"><a href="kyc.html" class="nav-link"> <i class="far fa-file-alt"></i> KYC
+                            Verification</a>
+                    </li>
+                    <li class="nav-item"><a href="docs.html" class="nav-link"> <i class="far fa-file-alt"></i>
+                            Documents</a>
+                    </li>
+                    <li class="nav-item"><a href="notification.html" class="nav-link"><i class="far fa-comment-alt"></i>
+                            Notification</a></li>
+                    <li class="nav-item"><a href="setting.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-sign-out-alt"></i>
+                            Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col w-100 p-0">
+            <div class="relative">
+                <div class=" top-menu fixed-top">
+            
+                    <div class="show-mob pl-3">
+                        <button class="open menu pr-5" id="openBtn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+            
+                        <img width="70px" src="https://app.hugosway.com/static/media/logo-black.edcaa2cc.svg" alt="">
+                    </div>
+            
+                    <div class=" wallet-sect">
+                        <h1><i class="far fa-wallet"></i>
+                            <p id="balance">0.00</p>
+                        </h1>
+                    </div>
+            
+                    <div class="welcome-greet">
+                        <div class="flex">
+                            <a href="https://download.mql5.com/cdn/web/11584/mt4/hugosway4setup.exe"><button
+                                    class="def-btn btn">Download
+                                    MT4</button></a>
+                            <a href="deposit-funds.html"><button class="def-btn btn">Deposit Funds</button></a>
+            
+                            <div class="notification">
+                                <i class="far fa-comment-alt"></i>
+                                <p class="notification-count">3</p>
+                            </div>
+            
+                            <div class="exit-message">
+                                <p class="exit-m">
+                                    Hey, Melvin
+                                </p>
+                                <a href="../index.html" class="exit"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="body">
+
+                <div class="two-factor alert">
+                    <p class="alert-m">
+                        Enable two-factor authentication now to secure your account. <a href="setting.html"><button
+                                class="btn def-btn dash-btn">Get Started</button></a>
+                    </p>
+                </div>
+                
+                <div class="kyc-flex">
+                    <div class="card w-100"><div class="container">
+                        <h1>Choose your country</h1>
+                        <select class="selectpicker countrypicker" data-live-search="true" data-default="United States"
+                            data-flag="true"></select>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script src="js/countrypicker.js"></script>
+    <script src="../src/app.js"></script>
+    <script src="../assets/bootstrap/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+
+
+</html>
