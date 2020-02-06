@@ -15,25 +15,34 @@
 <body>
 
     <div class="flex">
-        <div class="bg-black">
-           <div class="black-fixed">
+        <div class="bg-black" id="bg-black">
+            <div class="black-fixed">
 
                 <div class="logo-img">
-                    <img class="nav-img" src="https://app.hugosway.com/static/media/logo-primary-white.7b007d24.svg" alt="">
+                    <button class="close " id="closeBtn">
+                        <i class="fas fa-times" id="close-menu menu"></i>
+                    </button>
+
+                    <img class="nav-img" src="https://app.hugosway.com/static/media/logo-primary-white.7b007d24.svg"
+                        alt="">
                 </div>
                 <div class="nav-items-list">
                     <ul class="nav-items">
                         <li class="nav-item"><a href="dashboard.html" class="nav-link"><i class="fas fa-th-large"></i>
                                 Dashboard</a>
                         </li>
-                        <li class="nav-item"><a href="accounts.html" class="nav-link"><i class="fas fa-briefcase"></i> My
+                        <li class="nav-item"><a href="accounts.html" class="nav-link"><i class="fas fa-briefcase"></i>
+                                My
                                 Accounts</a>
                         </li>
-                        <li class="nav-item"><a href="deposit-funds.html" class="nav-link"> <i class="far fa-arrow-alt-circle-up"></i>
+                        <li class="nav-item"><a href="deposit-funds.html" class="nav-link"> <i
+                                    class="far fa-arrow-alt-circle-up"></i>
                                 Deposit Funds</a></li>
-                        <li class="nav-item"><a href="internal-transfer.html" class="nav-link"><i class="fas fa-retweet"></i> Internal
+                        <li class="nav-item"><a href="internal-transfer.html" class="nav-link"><i
+                                    class="fas fa-retweet"></i> Internal
                                 Transfer</a></li>
-                        <li class="nav-item"><a href="withdraw.html" class="nav-link"><i class="far fa-arrow-alt-circle-down"></i>
+                        <li class="nav-item"><a href="withdraw.html" class="nav-link"><i
+                                    class="far fa-arrow-alt-circle-down"></i>
                                 Withdraw</a></li>
                         <li class="nav-item"><a href="kyc.html" class="nav-link"> <i class="far fa-file-alt"></i> KYC
                                 Verification</a>
@@ -41,48 +50,51 @@
                         <li class="nav-item"><a href="docs.html" class="nav-link"> <i class="far fa-file-alt"></i>
                                 Documents</a>
                         </li>
-                        <li class="nav-item"><a href="notification.html" class="nav-link"><i class="far fa-comment-alt"></i>
+                        <li class="nav-item"><a href="notification.html" class="nav-link"><i
+                                    class="far fa-comment-alt"></i>
                                 Notification</a></li>
-                        <li class="nav-item"><a href="setting.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a>
+                        <li class="nav-item"><a href="setting.html" class="nav-link"><i class="fas fa-cog"></i>
+                                Settings</a>
                         </li>
-                        <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-sign-out-alt"></i>
+                        <li class="nav-item"><a href="../index.html" class="nav-link"><i
+                                    class="fas fa-sign-out-alt"></i>
                                 Logout</a>
                         </li>
                     </ul>
                 </div>
-           </div>
+            </div>
         </div>
 
         <div class="col w-100 p-0">
-           <div class="relative">
+            <div class="relative">
                 <div class=" top-menu">
 
-                    <div class="show-mob">
-                        <button class="mobile-menu menu">
+                    <div class="show-mob pl-3">
+                        <button class="open menu pr-5" id="openBtn">
                             <i class="fas fa-bars"></i>
                         </button>
-                    
-                        <img src="/assets/images/logo-primary.d8dba695.svg" alt="">
+
+                        <img width="70px" src="https://app.hugosway.com/static/media/logo-black.edcaa2cc.svg" alt="">
                     </div>
 
-                    <div class="col wallet-sect">
+                    <div class=" wallet-sect">
                         <h1><i class="far fa-wallet"></i>
                             <p id="balance">0.00</p>
                         </h1>
                     </div>
-                
+
                     <div class="welcome-greet">
                         <div class="flex">
                             <a href="https://download.mql5.com/cdn/web/11584/mt4/hugosway4setup.exe"><button
                                     class="def-btn btn">Download
                                     MT4</button></a>
                             <a href="deposit-funds.html"><button class="def-btn btn">Deposit Funds</button></a>
-                
+
                             <div class="notification">
                                 <i class="far fa-comment-alt"></i>
                                 <p class="notification-count">3</p>
                             </div>
-                
+
                             <div class="exit-message">
                                 <p class="exit-m">
                                     Hey, Melvin
@@ -93,7 +105,7 @@
                     </div>
                 </div>
 
-           </div>
+            </div>
 
             <div class="body">
                 <div class="alert-sect">
@@ -127,50 +139,52 @@
 
                     <p class="dash-big-title">Wallet</p>
 
-                    <table class="text-left table table-bordered table-hover">
-                        <thead class="thead-light">
-                            <tr>
-                                <th scope="col">Wallet</th>
-                                <th scope="col">Fund</th>
-                                <th scope="col">Pending Withdrawal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>USD</td>
-                                <td>&dollar;0.00</td>
-                                <td>&dollar;0.00</td>
-                            </tr>
-                            <tr>
-                                <td>EUR</td>
-                                <td>&pound;0.00</td>
-                                <td>&pound;0.00</td>
-                            </tr>
-                            <tr>
-                                <td>GBP</td>
-                                <td>&pound;0.00</td>
-                                <td>&pound;0.00</td>
-                            </tr>
+                    <div>
+                        <table class="text-left table table-bordered table-hover w-75" main-dash-table>
+                            <thead class="thead-light w-100">
+                                <tr>
+                                    <th scope="col">Wallet</th>
+                                    <th scope="col">Fund</th>
+                                    <th scope="col" class="th-issue">Pending Withdrawal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>USD</td>
+                                    <td>&dollar;0.00</td>
+                                    <td>&dollar;0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR</td>
+                                    <td>&pound;0.00</td>
+                                    <td>&pound;0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>GBP</td>
+                                    <td>&pound;0.00</td>
+                                    <td>&pound;0.00</td>
+                                </tr>
 
-                            <tr>
-                                <td>CAD</td>
-                                <td>CA&dollar;0.00</td>
-                                <td>CA&dollar;0.00</td>
-                            </tr>
+                                <tr>
+                                    <td>CAD</td>
+                                    <td>CA&dollar;0.00</td>
+                                    <td>CA&dollar;0.00</td>
+                                </tr>
 
-                            <tr>
-                                <td>AUD</td>
-                                <td>A&dollar;0.00</td>
-                                <td>A&dollar;0.00</td>
-                            </tr>
+                                <tr>
+                                    <td>AUD</td>
+                                    <td>A&dollar;0.00</td>
+                                    <td>A&dollar;0.00</td>
+                                </tr>
 
-                            <tr>
-                                <td>BTC</td>
-                                <td>BTC 0.00000000</td>
-                                <td>BTC 0.00000000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <td>BTC</td>
+                                    <td>BTC 0.00000</td>
+                                    <td>BTC 0.00000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div class="footer">

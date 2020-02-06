@@ -234,6 +234,7 @@ button[type=submit]{
 }
 
 .nav-link {
+    width: max-content;
     font-size: 14px;
     color: #fff;
     padding-left: 15px;
@@ -691,7 +692,9 @@ tr td{
 .setting-card{
     border: 1px solid grey;
     border-radius: 3px;
-    width: max-content;
+    max-width: max-content;
+    min-width: 300px;
+
 }
 
 .col{
@@ -700,7 +703,18 @@ tr td{
 }
 
 .two-factor-main .btn{
-    width: max-content;
+    text-align: left;
+    max-width: max-content;
+    min-width: 300px;
+}
+
+.show-mob{
+    display: none;
+}
+
+
+.close{
+    display: none;
 }
 
 .footer{
@@ -708,22 +722,125 @@ tr td{
     margin-left: 10px;
 }
 
-.close i {
-    color: #fff;
-    font-size: 20px;
-    margin: 10px                                                                                                                                          ;
-    margin-left: auto;
+
+.logo-img{
+    margin-top: 40px;
 }
 
+
+
 @media all and (max-width: 760px){
+
+    .show-mob{
+        display: block;
+    }
     .welcome-greet{
         display: none;
     }
 
-    .close-menu{
-        margin: 10px;
+    .top-menu{
+        max-width: max-content;
     }
 
+    .close-menu{
+        margin: 10px;
+   }
+
+   .close {
+    color: #fff;
+    font-size: 20px;
+    position: fixed;
+    z-index: 40;
+    left: 10px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    }
+
+    .close:hover{
+        color: #fff;
+    }
+
+    .open{
+        font-size: 20px;
+        border: none;
+        background: transparent;
+    }
+
+    .logo-img{
+        margin-top: 40px;
+    }
+
+    .nav-img{
+        display: none;
+    }
+
+    
+    .close{
+        display: block;
+    }
+
+    .bg-black{
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 400;
+        display: none;
+
+    }
+
+    .wallet-sect{
+        position: relative;
+        left: 0;
+    }
+
+    .acc-table{
+        display: block;
+        max-width: 100%;
+        overflow: scroll;
+    }
+
+    .acc-table tr th{
+        min-width: 100px;
+    }
+
+    .body{
+        padding: 80px 10px;
+    }
+
+    .main-dash-table tbody tr td{
+        text-align: left;
+        white-space: wrap;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        word-wrap: break-word;
+    }
+
+    .main-dash-table thead tr th {
+        white-space: pre-wrap;
+    }
+
+    .sm-w-100{
+        min-width: 100;
+    }
+
+
+    .flex{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media all and (max-width:320px){
+    .main-dash-table{
+        width: 50;
+    }
+
+    .th-issue{
+        white-space: pre-wrap !important;
+    }
 }
 
 @media all and (max-width: 733px){

@@ -15,7 +15,7 @@
 <body>
 
     <div class="flex">
-        <div class="bg-black">
+        <div class="bg-black" id="bg-black">
             <div class="logo-img">
                 <img class="nav-img" src="https://app.hugosway.com/static/media/logo-primary-white.7b007d24.svg" alt="">
             </div>
