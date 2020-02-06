@@ -727,6 +727,10 @@ tr td{
     margin-top: 40px;
 }
 
+.int-trans-select{
+    max-width: 30%;
+}
+
 
 
 @media all and (max-width: 760px){
@@ -780,6 +784,10 @@ tr td{
         display: block;
     }
 
+    .int-trans-select{
+        width: 30%;
+    }
+
     .bg-black{
         height: 100%;
         position: fixed;
@@ -787,8 +795,17 @@ tr td{
         bottom: 0;
         left: 0;
         z-index: 400;
-        display: none;
+        display: none; 
+        transition-property: margin-left;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0.1s;
 
+    }
+
+    #openBtn {
+        align-self: center;
+        padding-top: 2px;
     }
 
     .wallet-sect{
@@ -823,12 +840,20 @@ tr td{
     }
 
     .sm-w-100{
-        min-width: 100;
+        width: 100% !important;
+    }
+
+    .deposit-select{
+        width: 100%;
     }
 
 
     .flex{
         flex-wrap: wrap;
+    }
+
+    .int-trans-select{
+        min-width: 100%;
     }
 
 }
